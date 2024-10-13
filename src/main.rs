@@ -1,9 +1,28 @@
+use std::io::{stdin, Read};
+use va
+
 fn main() {
-    println!("Hello, world!");
-    let val: u8 = 5;
-    let val2: u8 = 123;
-    println!("val: {}, val2 : {}, result: {}", val, val2, val + val2);
-    let mut arr: [u8; 6] = [1,2,3,4,5,6];
-    let mybool: bool = false;
+    print_nav();
+    let mut input = String::new();
+    stdin().read_to_string( &mut input).unwrap();
+    
+    let test: &str = &String::from(&input);
+    let test2: &str = &String::from("1");
+    println!("{:?}",test.as_bytes());
+    println!("{:?}",test2.as_bytes());
+    if String::eq(&input.to_string(), &"1") {
+        println!("selected variable");
+    } else {
+        println!("selected {input}");
+    }
+}
+
+
+fn print_nav() {
+    println!("----------------------");
+    println!("1. variable");
+    println!("2. collection");
+    println!("3. exit               ");
+    println!("----------------------");
 }
  

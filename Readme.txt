@@ -16,6 +16,14 @@ https://www.rust-lang.org/learn/get-started
 6) run main.rs (cargo run)
 
 
+-------------------- Compile & Run --------------------
+1) move to target directory 
+2) compile .rs file (cmd : rustc {filename.rs})
+3) check generated .exe file
+4) run exe file (cmd : ./{filename})
+
+
+
 -------------------- Keyword --------------------
 _	    abstract	alignof	    as	        become
 box	    break	    const	    continue	crate
